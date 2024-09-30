@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    /* --color-body: white; */
+    --color-body: #ffffff;
+    --color-heading: #eef3db;
+    /* --color-base: #033f47; */
+    /* --color-base2: #022a30; */
+    /* --color-brand: #e0f780; */
+    /* --color-brand: #81f5ed; */
+    /* --color-brand:#0beaa7 ; */
+    /* --color-brand2: #deff58; */
+    --color-brand2: #e3a2b2;
+    --color-brand: #da7b93;
+    /* --color-brand:#615151; */
+    /* --color-brand2: #10d4d4; */
+    /* --color-base2:#E85C0D; */
+    --color-base: rgb(46, 21, 27);
+    --color-base: rgb(70, 21, 33);
+    --color-base2: #762037;
+    --sidbar-width: 240px;
+    --font-base:"Bai Jamjuree";
+/* 29e17f ,,,,#00fbff    #da7b93*/
+}
+
+main , header, footer{
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base),sans-serif;
+    /* background-color: #033f47; */
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-heading);
+    font-weight: 700;
+}
+a, .buttoncard a, .serviceCard a, .workText a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+img{
+    width: 100%;
+}
+
+::placeholder{
+    color: var(--color-body) !important;
+    
+}
+
+.navbar, .button2 button, .serviceCard, .workCard, .educationCard, .form-group input, .form-group textarea{
+    background-color: var(--color-base);
+}
+.nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar-brand img{
+    /* border: 0.3rem solid var(--color-brand); */
+}
+
+@media(min-width:992px){
+    .navbar{
+        min-height:100vh;
+        width: var(--sidbar-width);
+        /* background: linear-gradient(rgba(46, 21, 27, 0.7),rgba(46, 21, 27, 0.7)),url(./assets/images/sidebar-img.jpg); */
+        background: linear-gradient(rgba(70, 21, 33, 0.9),rgba(70, 21, 33, 0.9)),url(./assets/images/sidebar-img.jpg);
+        /* background-image: url(./assets/images/sidebar-img.jpg); */
+        background-position: center;
+        background-size: center;
+        background-repeat: no-repeat;
+    }
+    .homeDetails h1{
+        font-size: 3rem;
+    }
+    .wholeClass{
+        padding-left: 20rem;
+    }
+}
+/* #content-wrapper{
+    padding-left: var();
+} */
+/* HOME */
+
+span{
+    color:var(--color-brand);
+}
+
+.button1 button, .serviceIcon i, .form-group button{
+    background-color: var(--color-brand);
+    /* background-color: #5cd8eb; */
+}
+.button1 a, .serviceIcon i, .form-group button{
+    color: var(--color-base2);
+}
+.form-group button:hover{
+    background-color: var(--color-brand2);
+}
+.button1 button:hover{
+    background-color: var(--color-brand2);
+    transition: 1500ms ease;
+    scale: 1.05;
+    
+}
+.button2 button:hover{
+    /* background-color: var(--color-base); */
+    border:0.01rem solid var(--color-brand2);
+    transition: 1500ms ease;
+    scale: 1.05;
+}
+.button2 button:hover a{
+    /* color: white; */
+    color:var(--color-brand2);
+}  
+.button1 button:hover a{
+    color: var(--color-base);
+
+}
+.button2 button{
+    border-color: var(--color-brand);
+}
+.button2 a{
+    color: var(--color-brand);
+}
+.button2 a:hover{
+    color: var(--color-brand);
+}
+
+.serviceText h6, .educationCard h6{
+    color: var(--color-brand2);
+}
+.serviceCard, .workCard, .educationCard{
+    transition: all 0.5s;
+    border-radius: 1.2rem;
+}
+.workCard{
+    /* border: 0.2rem solid var(--color-brand); */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+.homeDetails img, .navbar-brand img{
+    border: 0.5rem solid var(--color-brand);
+}
+.workCard img{
+    border-top-left-radius:1.2rem ;
+    border-top-right-radius: 1.2rem;
+}
+.serviceCard:hover{
+    box-shadow: 8px 8px 0 0 var(--color-brand);
+}
+.educationCard:hover{
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+.workCard a:hover{
+    color: var(--color-brand);
+    border-bottom: 0.15rem solid var(--color-brand);
+    
+}
+.serviceCard a:hover{
+    color: var(--color-brand);
+    border-bottom: 0.15rem solid var(--color-brand);
+    
+}
+.contactCol2{
+    /* border: 0.1rem solid var(--color-brand); */
+}
+.serviceIcon i{
+    height: 4rem;
+    width: 4rem;
+}
+.homeDetails img{
+    height:9rem;
+    width: auto;
+}
+.copy2 i{
+    color:var(--color-base);
+    /* color: white; */
+    background-color: var(--color-brand2);
+    height: 2rem;
+    width: 2rem;
+}
+/* .serviceCard{
+    animation-name: serviceCardAnimation;
+    animation-delay: 2s;
+    animation-duration: 5s;
+
+}
+@keyframes serviceCardAnimation {
+    from{top: 0px;}
+    to{bottom: 10px;}
+} */
+.serviceCard{
+    animation-name: slideleft;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 2s; */
+    /* animation-fill-mode: backwards; */
+ }
+ @keyframes slideleft 
+    {
+          from{transform: translatey(100%);}  
+    }
